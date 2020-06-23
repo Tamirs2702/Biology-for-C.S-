@@ -724,7 +724,7 @@ class TestMinisom(unittest.TestCase):
         for w in som._weights:
             assert_array_equal(w[0], array([1.0, .0]))
 
-    def test_pca_weights_init(self):
+    def test_pca_weights_init(self):    
         som = MiniSom(2, 2, 2)
         som.pca_weights_init(array([[1.,  0.], [0., 1.], [1., 0.], [0., 1.]]))
         expected = array([[[0., -1.41421356], [-1.41421356, 0.]],
